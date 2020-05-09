@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer/footer.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { AppRoutingModule } from './app-routing.module';
 
+//Implementar en Api Rest
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,10 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Implementar el Modulo HttpClienModule para que pueda ser
+    // usado en toda la aplicacion
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
