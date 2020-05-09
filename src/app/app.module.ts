@@ -9,17 +9,22 @@ import { AppRoutingModule } from './app-routing.module';
 
 //Implementar en Api Rest
 import { HttpClientModule } from "@angular/common/http";
+//------------------------------------------------------------
+import { FormComponent } from './cliente/form/form.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ClienteComponent
+    ClienteComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     // Implementar el Modulo HttpClienModule para que pueda ser
     // usado en toda la aplicacion
     HttpClientModule
