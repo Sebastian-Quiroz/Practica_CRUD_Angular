@@ -8,8 +8,8 @@ import { Cliente } from 'src/app/models/cliente';
 })
 export class FormComponent implements OnInit {
 
-  private cliente: Cliente = new Cliente();
-  private titulo: string = 'Crear Cliente';
+  public cliente: Cliente = new Cliente();
+  public titulo: string = 'Crear Cliente';
 
   constructor() { }
 
@@ -18,7 +18,7 @@ export class FormComponent implements OnInit {
 
   /**
    * create
-   * @description Metodo que permitira leer datos para crear clientes
+   * Metodo que permitira leer datos para crear clientes
   */
   public create(): void {
     console.log('Clicked!');
