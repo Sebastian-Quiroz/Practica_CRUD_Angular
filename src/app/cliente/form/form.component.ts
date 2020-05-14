@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/models/cliente';
 import { ClienteService } from 'src/app/core/cliente.service';
 import { Router } from '@angular/router';
+//SweeteAlert2 api para mostrar alertas profesionales
+import  swal  from "sweetalert2";
 
 @Component({
   selector: 'app-form',
@@ -27,7 +29,11 @@ export class FormComponent implements OnInit {
     console.log('Clicked!');
     console.log(this.cliente);
     this.clienteService.create(this.cliente).subscribe(
-      response => this.routes.navigate(['/clientes'])
-    );
+      response => {
+        this.routes.navigate(['/clientes'])
+        // swal es un metodo del API sweetAlert2 
+        swal.fire('Nuevo Cliente', `Cliente ${this.cliente.nombre} creado con exito`, "success")
+        }
+      );
   }
 }
