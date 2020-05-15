@@ -18,7 +18,7 @@ export class ClienteComponent implements OnInit {
   ngOnInit(): void {
     // Suscribimos la variable para detectar los cambios
     this.clienteService.getClientes().subscribe(
-      clientes => this.clientes = clientes
+      datos => this.clientes = datos
     );
   }
 
@@ -41,7 +41,7 @@ export class ClienteComponent implements OnInit {
             // Filtrar los clientes que no han sido eliminados y mostrarlos
             //para actualizar la tabla
             this.clientes = this.clientes.filter(
-              cli => cli != cliente
+              cli => cli !== cliente
             );
             //mensaje de eliminado
             swal.fire(

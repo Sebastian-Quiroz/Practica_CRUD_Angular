@@ -2,7 +2,11 @@
     <div class="card-header">Clientes</div>
     <div class="card-body">
         <h5 class="card-title">Listado de Clientes</h5>
-        <table class="table table-bordered text-white">
+        <div *ngIf="clientes?.length == 0" class="alert alert-info">
+            No hay datos disponibles
+        </div>
+        <table class="table table-bordered text-white table-striped"
+            *ngIf="clientes?.length>0">
             <thead>
                 <tr>
                     <th>ID</th>
