@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su
 # Instalamos node
 yum install -y nodejs
 
