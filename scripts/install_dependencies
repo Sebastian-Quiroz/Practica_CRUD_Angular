@@ -1,0 +1,9 @@
+#!/bin/bash
+# Instalamos node
+yum install -y nodejs
+
+#instalamos angular
+npm install -g @angular/cli
+
+#instalamos dependencias package
+npm install
