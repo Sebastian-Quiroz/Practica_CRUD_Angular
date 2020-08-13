@@ -14,5 +14,6 @@ apt install -y nodejs
 # npm install -g @angular
 apt install -y npm
 # Intalar dependencias
+cd /home/ec2-user/myapp
 npm install
-echo
+ 
