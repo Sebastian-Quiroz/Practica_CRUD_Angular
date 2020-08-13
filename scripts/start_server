@@ -1,3 +1,4 @@
 #!/bin/bash
+nvm install node
 # ejecucion de produccion
 npm start
