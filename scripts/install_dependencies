@@ -7,3 +7,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 # Instalamos node
 nvm install node
 
+# Instalamos angular 
+npm install -g @angular/cli
