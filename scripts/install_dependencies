@@ -1,9 +1,9 @@
 #!/bin/bash
 # sudo su
-#
+apt install -y curl
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 # node con yum
-curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 # . ~/.nvm/nvm.sh
 # Instalamos node
 # nvm install node
@@ -14,4 +14,5 @@ apt install -y nodejs
 # npm install -g @angular
 apt install -y npm
 # Intalar dependencias
-npm install -y
+npm install
+echo
