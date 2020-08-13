@@ -13,3 +13,5 @@ apt install -y nodejs
 # Instalamos angular 
 # npm install -g @angular
 apt install -y npm
+# Intalar dependencias
+npm install -y
