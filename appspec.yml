@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: ./
-    destino: /home/ec2-user/
+  - source: .
+    destino: .
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
