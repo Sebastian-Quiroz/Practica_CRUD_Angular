@@ -9,6 +9,6 @@ curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 # nvm install node
 
 # node con yum
-yum install nodejs
+yum install -y nodejs
 # Instalamos angular 
 # npm install -g @angular
