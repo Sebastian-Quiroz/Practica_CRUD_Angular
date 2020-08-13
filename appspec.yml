@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 file:
-  source: /
-  destino: /miapp
+  - source: /
+    destino: /miapp/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
