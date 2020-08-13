@@ -1,11 +1,11 @@
 #!/bin/bash
-sudo su
+# sudo su
 #
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 #
 . ~/.nvm/nvm.sh
 # Instalamos node
-nvm install node
+nvm install -g node
 
 # Instalamos angular 
-npm install -g @angular/cli
+# npm install -g @angular/cli
