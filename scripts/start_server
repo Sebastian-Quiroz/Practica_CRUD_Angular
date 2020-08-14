@@ -3,4 +3,4 @@
 # ejecucion de produccion
 cd /home/ec2-user/myapp
 # 
-npm start
+# npm start
