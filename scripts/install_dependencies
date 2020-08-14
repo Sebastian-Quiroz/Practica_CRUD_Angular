@@ -13,6 +13,8 @@ apt install -y nodejs
 # Instalamos angular 
 # npm install -g @angular
 apt install -y npm
+# Instalando Angular
+npm install -g @angular/cli
 # Intalar dependencias
 cd /home/ec2-user/myapp
 npm install
